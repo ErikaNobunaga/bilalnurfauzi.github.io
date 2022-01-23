@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="w3.css">
+    <title>Biodata</title>
+</head>
+<body>
+    <div class=".w3-container">
+        <img src="1500x500.jpg" style="height: 200px; width: 100%">
+    </div>
+    <div class="w3-bar w3-black">
+        <button class="w3-bar-item w3-button" onclick="openMenu('Home')">Home</button>
+        <button class="w3-bar-item w3-button" onclick="openMenu('Profile')">Profile</button>
+        <button class="w3-bar-item w3-button" onclick="openMenu('About')">About</button>
+        <button class="w3-bar-item w3-button" onclick="openMenu('Contact')">Contact</button>
+    </div>
+    <div id="Home" class="w3-container menu" style="display: none;">
+        <h2>Home</h2>
+        <br>
+        <img class="w3-animate-zoom" src="even1.jpg" style="height: 300px; width: 300px">
+        <img class="w3-animate-fading" src="even2.jpg" style="height: 300px; width: 300px">
+        <img class="w3-animate-top" src="even4.jpg" style="height: 300px; width: 300px">
+        <img class="w3-animate-bottom" src="even3.jpg" style="height: 300px; width: 300px">
+    </div>
+
+    <div id="Profile" class="w3-container menu"  style="display: none; text-align: center;">
+        <h2>Profile</h2>
+        <img src="bilal.jpg" class="w3-animate-zoom"  style="width: 25%; text-align: center;">
+        <p>Nim : 10121109</p>
+        <p>Nama : Bilal Nur Fauzi</p>
+        <p>Kelas : IF-3</p>
+        <p>Jurusan : Teknik Informatika</p>
+        <p></p>
+
+        
+    </div>
+    <div id="About" class="w3-container menu"  style="display: none; text-align: center;">
+        <h2>About</h2>
+        <img src="ramen.jpg" class="w3-animate-zoom"  style="width: 46%">
+        <p style="color: gray;">Cuma gambar ramen :)</p>
+    </div>
+
+    <div id="Contact" class="w3-container menu"  style="display: none; text-align: center;">
+        <h2>Contact</h2>
+        <h4>Silahkan ajukan pertanyaan seputar apapun meskipun Website ini masih bersifat statis.</h4>
+        <br>
+        <textarea id="subject" name="subject" placeholder="Silahkan Masukan Pertanyaan...." style="height:200px"></textarea>
+        <br>
+    </div>
+
+    <div class="w3-container w3-black">
+        <p style="text-align: center;">&copy; Create By Bilal Nur Fauzi</p>
+    </div>
+    <script>
+        function openMenu(namaMenu) {
+         var i;
+         var x = document.getElementsByClassName("menu");
+         for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+         }
+         document.getElementById(namaMenu).style.display = "block";
+        }
+    </script>
+</body>
+</html>
